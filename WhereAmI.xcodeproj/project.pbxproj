@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		680BF2F2137DCDA6000E2D11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 680BF2F1137DCDA6000E2D11 /* Foundation.framework */; };
 		680BF2F5137DCDA6000E2D11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 680BF2F4137DCDA6000E2D11 /* main.m */; };
+		680BF300137DCDBA000E2D11 /* WhereAmI.m in Sources */ = {isa = PBXBuildFile; fileRef = 680BF2FF137DCDBA000E2D11 /* WhereAmI.m */; };
+		680BF31D137DD0D9000E2D11 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 680BF31C137DD0D9000E2D11 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +29,11 @@
 		680BF2ED137DCDA6000E2D11 /* WhereAmI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WhereAmI; sourceTree = BUILT_PRODUCTS_DIR; };
 		680BF2F1137DCDA6000E2D11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		680BF2F4137DCDA6000E2D11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		680BF2F7137DCDA6000E2D11 /* WhereAmI-Prefix.pch */ = {isa = PBXFileReference; path = "WhereAmI-Prefix.pch"; sourceTree = "<group>"; };
+		680BF2F7137DCDA6000E2D11 /* WhereAmI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhereAmI-Prefix.pch"; sourceTree = "<group>"; };
 		680BF2F8137DCDA6000E2D11 /* WhereAmI.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WhereAmI.1; sourceTree = "<group>"; };
+		680BF2FE137DCDBA000E2D11 /* WhereAmI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereAmI.h; sourceTree = "<group>"; };
+		680BF2FF137DCDBA000E2D11 /* WhereAmI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereAmI.m; sourceTree = "<group>"; };
+		680BF31C137DD0D9000E2D11 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				680BF31D137DD0D9000E2D11 /* CoreLocation.framework in Frameworks */,
 				680BF2F2137DCDA6000E2D11 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +52,7 @@
 		680BF2E2137DCDA6000E2D11 = {
 			isa = PBXGroup;
 			children = (
+				680BF31C137DD0D9000E2D11 /* CoreLocation.framework */,
 				680BF2F3137DCDA6000E2D11 /* WhereAmI */,
 				680BF2F0137DCDA6000E2D11 /* Frameworks */,
 				680BF2EE137DCDA6000E2D11 /* Products */,
@@ -74,6 +81,8 @@
 				680BF2F4137DCDA6000E2D11 /* main.m */,
 				680BF2F8137DCDA6000E2D11 /* WhereAmI.1 */,
 				680BF2F6137DCDA6000E2D11 /* Supporting Files */,
+				680BF2FE137DCDBA000E2D11 /* WhereAmI.h */,
+				680BF2FF137DCDBA000E2D11 /* WhereAmI.m */,
 			);
 			path = WhereAmI;
 			sourceTree = "<group>";
@@ -134,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				680BF2F5137DCDA6000E2D11 /* main.m in Sources */,
+				680BF300137DCDBA000E2D11 /* WhereAmI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

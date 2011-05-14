@@ -7,16 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WhereAmI.h"
 
 int main (int argc, const char * argv[])
 {
 
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+    
+    WhereAmI *where = [[WhereAmI alloc] init];
+    [where startLocating:nil];
 
-    // insert code here...
-    NSLog(@"Hello, World!");
-
+    
+    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+    [runLoop run];
+    
     [pool drain];
     return 0;
 }
-

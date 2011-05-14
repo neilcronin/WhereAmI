@@ -1,1 +1,3 @@
 WhereAmI is a command line OS X app that emits your computer's current location.
+
+There is a binary in the "Downloads" section.  You will need to chmod o+x it.
